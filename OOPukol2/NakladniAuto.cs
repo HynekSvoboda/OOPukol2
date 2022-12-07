@@ -27,7 +27,8 @@ namespace OOPukol2
         }
         public void NalozNaklad(short nalozeni)
         {
-            if(nalozeni>nosnost)
+            if (nosnost == hmotnostnakladu) MessageBox.Show("Nebylo naloženo: " + nalozeni.ToString() + " tun");
+            else if (nalozeni>nosnost)
             {
                 hmotnostnakladu=nosnost;
                 MessageBox.Show("Částečné naložení, nebylo naloženo: " + (nalozeni - nosnost).ToString() + " tun");
