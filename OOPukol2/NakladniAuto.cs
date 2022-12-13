@@ -9,9 +9,9 @@ namespace OOPukol2
 {
     internal class NakladniAuto
     {
-        string spz;
-        short nosnost;
-        short hmotnostnakladu = 0;
+       protected string spz;
+       protected short nosnost;
+       protected short hmotnostnakladu = 0;
 
         public short HmotnostNakladu
         {
@@ -27,13 +27,13 @@ namespace OOPukol2
         }
         public void NalozNaklad(short nalozeni)
         {
-            if (nosnost == hmotnostnakladu) MessageBox.Show("Nebylo naloženo: " + nalozeni.ToString() + " tun");
-            else if (nalozeni>nosnost)
+            if (nalozeni + hmotnostnakladu > nosnost)
             {
-                hmotnostnakladu=nosnost;
-                MessageBox.Show("Částečné naložení, nebylo naloženo: " + (nalozeni - nosnost).ToString() + " tun");
+                MessageBox.Show("Nenaložilo se " + (nalozeni + hmotnostnakladu - nosnost) + " tun.");
+                hmotnostnakladu = nosnost;
             }
-            else hmotnostnakladu=nalozeni;
+            else
+                hmotnostnakladu += nalozeni;
         }
         public void VylozNaklad(short vylozeni)
         {

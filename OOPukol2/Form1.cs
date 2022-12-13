@@ -19,10 +19,10 @@ namespace OOPukol2
             button3.Visible = false;
             button4.Visible = false;
         }
-        NakladniAuto auto;
+        Tahac auto;
         private void button1_Click(object sender, EventArgs e)
         {
-            auto = new NakladniAuto(maskedTextBox1.Text, (short)numericUpDown1.Value);
+            auto = new Tahac(maskedTextBox1.Text, (short)numericUpDown1.Value,(short)numericUpDown4.Value);
             button3.Visible = true;
             button4.Visible = true;
         }
