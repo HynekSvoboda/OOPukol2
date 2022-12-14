@@ -15,9 +15,5 @@ namespace OOPukol2
             this.nosnostVlečky = nosnostVlečky;
             base.nosnost += nosnostVlečky;
         }
-        public override string ToString()
-        {
-            return "Nákladní auto " + spz + " má nosnost " + nosnost.ToString() + " t a má naloženo " + hmotnostnakladu.ToString() + " t písku";
-        }
     }
 }
