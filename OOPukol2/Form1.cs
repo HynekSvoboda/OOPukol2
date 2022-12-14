@@ -25,6 +25,7 @@ namespace OOPukol2
             auto = new Tahac(maskedTextBox1.Text, (short)numericUpDown1.Value,(short)numericUpDown4.Value);
             button3.Visible = true;
             button4.Visible = true;
+            button1.Visible = false;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -42,6 +43,13 @@ namespace OOPukol2
         {
             auto.VylozNaklad((short)(numericUpDown3.Value));
             label5.Text = auto.ToString();
+        }
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+            button1.Visible = true;
+            button3.Visible = false;
+            button4.Visible = false;
         }
     }
 }

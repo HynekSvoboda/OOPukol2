@@ -12,9 +12,8 @@ namespace OOPukol2
 
         public Tahac(string spz, short nosnost,short nosnostVlečky) : base (spz,nosnost)
         {
-            this.spz = spz;
             this.nosnostVlečky = nosnostVlečky;
-            this.nosnost = nosnost;
+            nosnost += nosnostVlečky;
         }
         public override string ToString()
         {
