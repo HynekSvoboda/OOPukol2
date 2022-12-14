@@ -55,6 +55,11 @@
             this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.numericUpDown1.ForeColor = System.Drawing.Color.White;
             this.numericUpDown1.Location = new System.Drawing.Point(156, 53);
+            this.numericUpDown1.Maximum = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
             this.numericUpDown1.Minimum = new decimal(new int[] {
             1,
             0,
@@ -76,6 +81,11 @@
             this.numericUpDown2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.numericUpDown2.ForeColor = System.Drawing.Color.White;
             this.numericUpDown2.Location = new System.Drawing.Point(504, 53);
+            this.numericUpDown2.Maximum = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
             this.numericUpDown2.Minimum = new decimal(new int[] {
             1,
             0,
@@ -96,6 +106,11 @@
             this.numericUpDown3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.numericUpDown3.ForeColor = System.Drawing.Color.White;
             this.numericUpDown3.Location = new System.Drawing.Point(652, 53);
+            this.numericUpDown3.Maximum = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
             this.numericUpDown3.Minimum = new decimal(new int[] {
             1,
             0,
@@ -117,7 +132,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(38, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 16);
+            this.label1.Size = new System.Drawing.Size(84, 16);
             this.label1.TabIndex = 4;
             this.label1.Text = "Zadej SPZ:";
             // 
@@ -128,7 +143,7 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(153, 26);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(136, 16);
+            this.label2.Size = new System.Drawing.Size(135, 16);
             this.label2.TabIndex = 5;
             this.label2.Text = "Zadej nosnost ( t ):";
             // 
@@ -139,7 +154,7 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(501, 26);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(140, 16);
+            this.label3.Size = new System.Drawing.Size(139, 16);
             this.label3.TabIndex = 6;
             this.label3.Text = "Zadej nalozeni ( t ):";
             // 
@@ -150,7 +165,7 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(649, 26);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(139, 16);
+            this.label4.Size = new System.Drawing.Size(138, 16);
             this.label4.TabIndex = 7;
             this.label4.Text = "Zadej vylozeni ( t) :";
             // 
@@ -174,7 +189,7 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(38, 149);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(12, 16);
+            this.label5.Size = new System.Drawing.Size(11, 16);
             this.label5.TabIndex = 9;
             this.label5.Text = ".";
             // 
@@ -188,6 +203,7 @@
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(70, 22);
             this.maskedTextBox1.TabIndex = 10;
+            this.maskedTextBox1.Click += new System.EventHandler(this.maskedTextBox1_Click);
             // 
             // button2
             // 
@@ -235,7 +251,7 @@
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(294, 26);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(185, 16);
+            this.label6.Size = new System.Drawing.Size(184, 16);
             this.label6.TabIndex = 15;
             this.label6.Text = "Zadej nosnost vlečky ( t ):";
             // 
@@ -245,6 +261,11 @@
             this.numericUpDown4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.numericUpDown4.ForeColor = System.Drawing.Color.White;
             this.numericUpDown4.Location = new System.Drawing.Point(325, 54);
+            this.numericUpDown4.Maximum = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
             this.numericUpDown4.Minimum = new decimal(new int[] {
             1,
             0,
@@ -258,6 +279,7 @@
             0,
             0,
             0});
+            this.numericUpDown4.ValueChanged += new System.EventHandler(this.numericUpDown4_ValueChanged);
             // 
             // Form1
             // 

@@ -50,6 +50,23 @@ namespace OOPukol2
             button1.Visible = true;
             button3.Visible = false;
             button4.Visible = false;
+            label1.Text = "";
+        }
+
+        private void numericUpDown4_ValueChanged(object sender, EventArgs e)
+        {
+            button1.Visible = true;
+            button3.Visible = false;
+            button4.Visible = false;
+            label1.Text = "";
+        }
+
+        private void maskedTextBox1_Click(object sender, EventArgs e)
+        {
+            button1.Visible = true;
+            button3.Visible = false;
+            button4.Visible = false;
+            label1.Text = "";
         }
     }
 }
